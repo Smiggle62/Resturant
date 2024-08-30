@@ -138,65 +138,78 @@
     </section>
 
     <hr />
+
     <section id="Heavy Load">
-      <dl>
-        <dt>Extra Additives</dt>
-        <dd><strong>These come at a different cost when ordered!</strong></dd>
+      <fieldset>
+        <dl>Extra Additives</dl>
+        <legend>These come at a different cost when ordered!</legend>
 
         <ol>
-          <li>Extra cheese</li>
-          <li>Extra sauce(Ketchup,Mayo,Soy sauce,Shito,Pepper)</li>
-          <li>Extra chicken</li>
-          <li>Extra Juice</li>
-        </ol>
-      </dl>
-    </section>
+          <label for="extra sauce">Extra sauce</label>
+          <select name="extra sauce" id="sauce">
+            <option value="Ketup">Ketcup</option>
+            <option value="Mayo">Mayo</option>
+            <option value="soy sauce">Soy Sauce</option>
+            <option value="shito">Shito</option>
+            <option value="pepper">Red Pepper</option>
+          </select>
 
-    <p>We are located at Old Barrier Taxi Rank opposite the washing bay</p>
+          <input type="radio" name="food" id="Chicken" value="Chicken" />
+          <label for="Chicken">Extra Chicken</label>
+
+          <input type="radio" name="food" id="Juice" value="Juice" />
+          <label for="Juice">Extra Juice</label>
+        </ol>
+      </fieldset>
+    </section>
   </body>
   <footer>
     <!--This section is used to send a compliant or reviews for the website/food incase of extra support-->
     <p>In case you need any assistance,please leave a comment here</p>
-    <p>
-      <label for="lastName">Last Name</label>
-      <input
-        type="text"
-        name="lastName"
-        id="lastName"
-        placeholder="Acquaye"
-        autocomplete="on"
-        required
-      />
-    </p>
 
-    <p>
-      <label for="firstName">First Name</label>
-      <input
-        type="text"
-        name="firstName"
-        id="firstName"
-        placeholder="Emmanuel"
-        autocomplete="on"
-        required
-      />
-    </p>
+    <fieldset>
+      <legend>Tell Us Your Thoughts</legend>
+      <p>
+        <label for="lastName">Last Name</label>
+        <input
+          type="text"
+          name="lastName"
+          id="lastName"
+          placeholder="Acquaye"
+          autocomplete="on"
+          required
+        />
+      </p>
 
-    <p>
-      <label for="comment">Comment</label>
-      <input
-        type="text"
-        name="comment"
-        id="firstName"
-        autocomplete="on"
-        required
-      />
-    </p>
+      <p>
+        <label for="firstName">First Name</label>
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          placeholder="Emmanuel"
+          autocomplete="on"
+          required
+        />
+      </p>
 
-    <input type="submit" value="Submit" />
-    <p>
-      If you click the "Submit" button, the form will be sent to the admin for
-      review. Thank you!
-    </p>
+      <p>
+        <label for="comment">Comment</label>
+        <input
+          type="text"
+          name="comment"
+          id="firstName"
+          autocomplete="on"
+          required
+        />
+      </p>
+
+      <input type="submit" value="Submit" />
+      <p>
+        If you click the "Submit" button, the form will be sent to the admin for
+        review. Thank you!
+      </p>
+    </fieldset>
 
     <p>
       <a href="#">Back to Top</a>
