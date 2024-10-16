@@ -1,139 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Emmanuel Acquaye">
-        <meta name="description" Creampie all you can eat foods.>
-       
-        <title>Creampie foods</title>
-             <link rel="icon" href="Creampie logo 2.jpeg" type="image/x-icon">
-             <link rel="Stylesheet" href="main.css" type="text/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Emmanuel Acquaye" />
+    <meta name="description" content="The offical website for Creampie Foods" />
 
+    <title>Creampie foods</title>
+    <link rel="icon" href="img/Creampie logo 2.jpeg" type="image/x-icon" />
+    <link rel="Stylesheet" href="index.css" type="text/css" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  </head>
+  <body>
+    <header>
+      <h1>Creampie Foods</h1>
 
-    </head>
+      <figure>
+        <figcaption><strong>ALL YOU CAN EAT!</strong></figcaption>
+        <img src="img/Creampie logo 2.jpeg" height="500" />
+      </figure>
+      <hr />
 
+      <nav>
+        <ul>
+          <li>
+            <a href="#Morning">Morning Foods</a>
+          </li>
 
-    <head>
+          <li>
+            <a href="#Afternoon">Afternoon Foods</a>
+          </li>
 
-        <body>
-            <h1>Creampie Foods</h1>
-        
-            <hr>
+          <li>
+            <a href="#Evening">Evening Foods</a>
+          </li>
+        </ul>
+      </nav>
 
-            <nav>
-                <ul>
+      <hr />
+    </header>
 
-                    <li>
-                        <a href="#Morning">Morning Foods</a>
-                       
-                    </li>
+    <section id="Morning">
+      <h2><strong>Break Fast</strong></h2>
+      <hr />
 
-                    <li>
-                        <a href="Afternoon">Afternoon Foods</a>
-                    </li>
+      <!-- Add extra food incase there is a new list added for breakfast-->
 
-                    <li>
-                        <a href="Evening">Evening Foods</a>
-                    </li>
-                </ul>
-            </nav>
- 
-            <p><b>All you can eat</b></p>
-            <hr>
-            
-           <h2>Food list</h2>
-            <section id="Morning">
-            
-            <h2><b>Break Fast</b></h2>
-            <hr>
-            
-            <!-- Add extra food incase there is a new list added for breakfast-->
+      <ol>
+        <input type="checkbox" name="food" id="Oat" value="Oat" />
+        <label for="Oat">Oat</label
+        ><br />
+
+        <input type="checkbox" name="food" id="Tea" value="Tea" />
+        <label for="Tea">Tea</label
+        ><br />
+
+        <input type="checkbox" name="food" id="Tea" value="Tea" />
+        <label for="Tea">Tea</label
+        ><br />
+
+        <input type="checkbox" name="food" id="Tom Brown" value="Tom Brown" />
+        <label for="Tom Browm">Tom Brown</label
+        ><br />
+
+        <input type="checkbox" name="food" id="Wheat" value="Wheat" />
+        <label for="Tom Browm">Wheat</label
+        ><br />
+
+        <input
+          type="checkbox"
+          name="food"
+          id="Bread and Egg"
+          value="Bread and Egg"
+        />
+        <label for="Bread and Egg">Bread and Egg</label
+        ><br />
+      </ol>
+
+      <section id="Afternoon">
+        <h2>Lunch</h2>
+        <hr />
+        <!-- Add extra food for Lunch -->
+        <ol>
+          <input type="checkbox" name="food" value="Yam" id="Yam" />
+          <label for="Yam">Boiled Yam and Kontomire</label
+          ><br />
+
+          <input
+            type="checkbox"
+            name="food"
+            value="oiled rice"
+            id="oiled rice"
+          />
+          <label for="oiled rice">Oiled rice and Pepper</label
+          ><br />
+
+          <input type="checkbox" name="food" value="fried yam" id="fried yam" />
+          <label for="fried yam">Fried Yam and Pepper</label
+          ><br />
+
+          <input type="checkbox" name="food" value="Beans" id="Beans" />
+          <label for="beans">Beans and Fired Plantain</label
+          ><br />
+
+          <input
+            type="checkbox"
+            name="food"
+            value="fried rice"
+            id="fried rice"
+          />
+          <label for="fried rice">Fried rice with Grilled Chicken</label
+          ><br />
+
+          <input type="checkbox" name="food" value="Waakye" id="Waakye" />
+          <label for="beans">Beans and Fired Plantain</label
+          ><br />
+
+          <input type="checkbox" name="food" value="Beans" id="Beans" />
+          <label for="Waakye"
+            >Waakye with (Egg,sausage,Avocado,coleslaw and macaroni)</label
+          ><br />
+        </ol>
+      </section>
+
+      <section id="Evening">
+        <h2>Supper</h2>
+        <hr />
+        <!-- Add extra food for Supper -->
 
         <ol>
-            <li>Kooko</li>
-            <li>Oat</li>
-            <li>Tea</li>
-            <li>Tom Brown</li>
-            <li>Wheat</li>
-            <li>Bread and Egg</li>
-        
+          <input type="checkbox" name="Pie" id="Pie" value="Pie" />
+          <label for="Pie">Pie with Jucice</label
+          ><br />
+
+          <input type="checkbox" name="Salad" id="Salad" value="Salad" />
+          <label for="Salad">Fruit Salad</label
+          ><br />
+
+          <input type="checkbox" name="Indomie" id="Indomie" value="Indomie" />
+          <label for="Indomie">Indomie</label
+          ><br />
+
+          <input
+            type="checkbox"
+            name="Stir Fry"
+            id="Stir Fry"
+            value="Stir Fry"
+          />
+          <label for="Stir Fry">Stir Fry</label
+          ><br />
+
+          <input type="checkbox" name="rolls" id="rolls" value="rolls" />
+          <label for="rolls">Spring roll/Samosa with Shito</label
+          ><br />
+
+          <input type="checkbox" name="Banku" id="Banku" value="Banku" />
+          <label for="Banku">Banku and Tilapia</label
+          ><br />
         </ol>
+      </section>
 
+      <section id="Sweet tooth">
+        <h2><strong>You can Order at an Expense</strong></h2>
+
+        <hr />
+        <!-- Extra foods for Fridays and Saturdays -->
+
+        <ul>
+          <input type="checkbox" id="pizza" name="pizza" value="pizza" />
+          <label for="pizza">Pizza</label>
+          <img
+            src="img/pizza.jpg"
+            alt="pizza"
+            width="150"
+            height="100"
+            loading="lazy"
+          />
+
+          <input type="checkbox" id="burger" name="burger" value="burger" />
+          <label for="burger">Burger</label>
+          <img
+            src="img/burger with fries.jpg"
+            alt="burger with fries"
+            width="100"
+            height="110"
+            loading="lazy"
+          />
+
+          <input
+            type="checkbox"
+            id="Sandwhich"
+            name="Sandwhich"
+            value="Sandwhich"
+          />
+          <label for="Sandwhich">Sandwhich</label>
+          <img
+            src="img/Sandwhich.jpg"
+            alt="Sandwhich"
+            width="100"
+            height="80"
+            loading="lazy"
+          />
+
+          <input type="checkbox" id="quiche" name="quiche" value="quiche" />
+          <label for="quiche">Quiche</label>
+          <img
+            src="img/quiche-recipe-SQUARE.jpg"
+            alt="quiche-recipe-SQUARE"
+            width="100"
+            height="80"
+            loading="lazy"
+          />
+
+          <input type="checkbox" name="chicken wrap" id="chicken wrap" />
+          <label for="chicken wrap">Chicken Wrap</label>
+          <img
+            src="img/chicken wrap.jpg"
+            alt="chicken wrap"
+            width="100"
+            height="150"
+            loading="lazy"
+          />
+        </ul>
+      </section>
     </section>
-            
-        <section id="Afternoon">    
-            <h2>Lunch</h2>
-            <hr>
-            <!-- Add extra food for Lunch -->
-            <ol>
-                <li>Boiled Yam and Kontomire Stew</li>
-                <li>Oiled rice and Pepper</li>
-                <li>Fried Yam and Pepper</li>
-                <li>Beans with Fried Plantian</li>
-                <li>Fried rice with Grilled Chicken</li>
-                <li>Waakye with(Egg,Sausage,Plantain,Salad)</li>
-            </ol>
-        </section>
 
-        <section id="Evening">
-            <h2>Supper</h2>
-            <hr>
-            <!-- Add extra food for Supper -->
-            <ol>
-                <li>Pie with Juice</li>
-                <li>Fruit Salad</li>
-                <li>Indomie</li>
-                <li>Stir Fry</li>
-                <li>Spring roll/Samosa with ice cream</li>
-                <li>Banku and Tilapia</li>
-            </ol>
-        </section>
+    <hr />
 
+    <section id="Heavy Load">
+      <fieldset>
+        <dl>Extra Additives</dl>
+        <legend>These come at a different cost when ordered!</legend>
 
-        <section id="Sweet tooth">
-            <h2>Meals You can Order at an Expense</h2>
-            <hr>
-            <!-- Extra foods for Fridays and Saturdays -->
-            <ul>
-                <li>Pizza</li>
-                <li>Burger</li>
-                <li>Sandwhich</li>
-                <li>Quiche</li>
-                <li>Shawarma(Chicken,sausage)</li>
-                
-            </ul>
-        </section>
-        
-            <hr>
-            <section id="Heavy Load">
-            <dl>
-                <dt>Extra Additives</dt>
-                <dd><strong>These come at a different cost when ordered!</strong></dd>
-                <ol>
-                    <li>Extra cheese</li>
-                    <li>Extra sauce(Ketchup,Mayo,Soy sauce,Shito,Pepper)</li>
-                    <li>Extra chicken</li>
-                    <li>Extra Juice</li>
-                </ol>
-            
-            </dl>
+        <ol>
+          <label for="extra sauce">Extra sauce</label>
+          <select name="extra sauce" id="sauce">
+            <option value="Ketup">Ketcup</option>
+            <option value="Mayo">Mayo</option>
+            <option value="soy sauce">Soy Sauce</option>
+            <option value="shito">Shito</option>
+            <option value="pepper">Red Pepper</option>
+          </select>
 
-        </section>
+          <input type="radio" name="food" id="Chicken" value="Chicken" />
+          <label for="Chicken">Extra Chicken</label>
 
-            <p>We are located at Weija opposite the washing bay</p>
-            <p>contact us on this page</p>
-            <a href="mailoacquayee2@gmail.com"></a>
+          <input type="radio" name="food" id="Juice" value="Juice" />
+          <label for="Juice">Extra Juice</label>
+        </ol>
+      </fieldset>
+    </section>
+  </body>
+  <p>To Learn More About Us,Click on About</p>
+    <a href="about.html">About</a>
 
-        </body>
-        
-
-    </head>
-
-
-
-</head>
-    &lt;&lt;&lt; &copy; <a href="about.html">Creampie Industry</a> &gt;&gt;&gt;
     <p>
-        <a href="#">Back to Top</a>
+      <a href="#">Back to Top</a>
     </p>
+
+    <p>Copyright &copy; <a href="about.html">Creampie Foods</a></p>
 </html>
